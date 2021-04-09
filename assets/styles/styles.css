@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  line-height: 1.2;
+  width: 100%;
+  /* background: #242424; */
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 100vh;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3D41D7;
+}
+
+body::-webkit-scrollbar-track {
+  background: grey;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body .container .header-side-bar {
+  background: #3D41D7 url("../images/bottom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 15px;
+  height: 100%;
+  width: 18rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+body .container .header-side-bar .header-side-bar-logo-container {
+  text-align: center;
+  padding: 1.5em 0 2.5em 0;
+}
+
+body .container .header-side-bar .side-bar-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li {
+  width: 100%;
+  position: relative;
+  margin: 0.3em 0;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #D3D3FD;
+  font-size: 0.9rem;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-arrow {
+  margin-left: auto;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display .side-bar-display-image-container {
+  margin-right: 1em;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display .side-bar-display-image-container img {
+  vertical-align: middle;
+}
+
+body .container .header-side-bar .side-bar-nav {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+body .container .header-side-bar .side-bar-nav .side-bar-header {
+  font-size: 0.9rem;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #D3D3FD;
+  padding: 0.7em 0;
+}
+
+body .container .header-side-bar .side-bar-upgrade-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.9em;
+}
+
+body .container .header-side-bar .side-bar-upgrade-container .side-bar-upgrade-arrow-container {
+  background: #FFFFFF;
+  border-radius: 16px;
+  height: 4em;
+  width: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body .container .header-side-bar .side-bar-upgrade-container .side-bar-upgrade-text-container {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1.3em 0;
+}
+
+body .container .header-side-bar .side-bar-upgrade-container .side-bar-upgrade-text-container span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+body .container .header-side-bar .side-bar-upgrade-container .side-bar-upgrade-btn-container button {
+  height: 3em;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 0em 3em;
+  display: flex;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #323484;
+  border: 0px solid #000;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body .container main {
+  border-radius: 15px;
+  flex-grow: 1;
+  width: 100%;
+  padding: 1em 3em;
+}
+
+body .container main .main-display {
+  display: flex;
+  flex-direction: column;
+}
+
+body .container main .main-display .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+body .container main .main-display .main-header .main-header-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body .container main .main-display .main-header .main-header-name-container .main-header-greeting-container {
+  color: #8F92A1;
+  font-size: 0.9rem;
+}
+
+body .container main .main-display .main-header .main-header-name-container .main-header-dashboard-update-padding {
+  padding: 0.3em 0;
+}
+
+body .container main .main-display .main-header .main-header-name-container .main-header-dashboard-update {
+  font-size: 35px;
+  color: #272835;
+}
+
+body .container main .main-display .main-header .main-header-profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container main .main-display .main-header .main-header-profile-container .main-header-profile-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+  font: inherit;
+  vertical-align: baseline;
+  margin-right: 2.5em;
+}
+
+body .container main .main-display .main-header .main-header-profile-container .main-header-profile-logo-container button {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  height: 3em;
+  width: 3em;
+}
+
+body .container main .main-display .main-header .main-header-profile-container .main-header-profile-logo-container button .svg-container {
+  cursor: pointer;
+  vertical-align: baseline;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body .container main .main-display .main-header .main-header-profile-container .main-header-profile-logo-container button .svg-container .notification-number {
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 0.5rem;
+  top: -3px;
+  right: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3D41D7;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+body .container main .main-display .main-header .main-header-profile-container .header-profile-display {
+  width: 3em;
+  height: 3em;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(0px 14px 34px rgba(34, 37, 169, 0.4));
+}
+
+body .container main .main-display .main-header .main-header-profile-container .header-profile-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */
