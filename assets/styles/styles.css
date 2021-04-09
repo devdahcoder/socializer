@@ -278,4 +278,69 @@ body .container main .main-display .main-header .main-header-profile-container .
   height: 100%;
   object-fit: cover;
 }
+
+body .container main .main-display .chart-update-container {
+  border: 1px solid red;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update {
+  background: #FFF4F2;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-image-container {
+  background: #7CDDD9;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display .chart-update-blog-card-latest-update-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display .chart-update-blog-card-latest-update-text-container .chart-update-blog-card-latest-update-text-header {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display .chart-update-blog-card-latest-update-text-container .chart-update-blog-card-latest-update-text-padding {
+  padding: 0.1em 0;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display .chart-update-blog-card-latest-update-text-container .chart-update-blog-card-latest-update-text-sub-header {
+  font-size: 0.8rem;
+  color: #8F92A1;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update .chart-update-blog-card-latest-update-text-add-display .chart-update-blog-card-latest-update-add-container {
+  background: #3D41D7;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+}
 /*# sourceMappingURL=styles.css.map */
