@@ -75,6 +75,7 @@ body .container .header-side-bar .side-bar-ul .side-bar-li a {
   text-decoration: none;
   color: #D3D3FD;
   font-size: 0.9rem;
+  justify-content: space-between;
 }
 
 body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container {
@@ -84,14 +85,11 @@ body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container
   justify-content: space-between;
 }
 
-body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-arrow {
-  margin-left: auto;
-}
-
 body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-right: 2.5em;
 }
 
 body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display .side-bar-display-image-container {
@@ -100,6 +98,22 @@ body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container
 
 body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-display .side-bar-display-image-container img {
   vertical-align: middle;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-arrow {
+  margin-left: auto;
+}
+
+body .container .header-side-bar .side-bar-ul .side-bar-li a .side-bar-container .side-bar-message-notification {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: #DE350B;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vh;
+  font-size: 0.8rem;
 }
 
 body .container .header-side-bar .side-bar-nav {
@@ -279,15 +293,11 @@ body .container main .main-display .main-header .main-header-profile-container .
   object-fit: cover;
 }
 
-body .container main .main-display .chart-update-container {
-  border: 1px solid red;
-}
-
 body .container main .main-display .chart-update-container .chart-update-display {
   display: grid;
-  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
+  margin: 3.2em 0;
 }
 
 body .container main .main-display .chart-update-container .chart-update-display .chart-update-blog-card-latest-update {
@@ -342,5 +352,393 @@ body .container main .main-display .chart-update-container .chart-update-display
   justify-content: center;
   width: 3em;
   height: 3em;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-analysis {
+  background: #F6F8FF;
+  border-radius: 20px;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-video-count {
+  background: #F6F8FF;
+  border-radius: 20px;
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-video-count .update-video-play-btn-container {
+  background: #FFFFFF;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-video-count .update-video-count-container {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #272835;
+  padding: 0.5em 0 0.2em 0;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-video-count .update-video-text-container {
+  color: #8F92A1;
+  font-size: 0.9rem;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-schedule-post {
+  background: #3D41D7;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 20px;
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-schedule-post .update-schedule-icon-container {
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-schedule-post .update-schedule-count-container {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.4em 0 0.2em 0;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-analysis-container .update-schedule-post .update-schedule-post-text-container {
+  font-size: 0.9rem;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container:hover .update-weather-hover-text {
+  display: flex;
+  animation: scale 600ms ease-in-out forwards;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-image {
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-hover-header {
+  font-size: 1.4rem;
+  line-height: 32px;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-sub-header {
+  padding: 0.5em 0 0.9em 0;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-degree {
+  font-size: 2.4rem;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-add-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-add-btn-container .update-weather-btn-container {
+  background: #FFFFFF;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 20px 0px 20px 20px;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container main .main-display .chart-update-container .chart-update-display .update-image-weather-update-container .update-weather-hover-text .update-weather-add-btn-container .update-weather-btn-container .svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3D41D7;
+  box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+  border-radius: 10px;
+  width: 3em;
+  height: 3em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-main-header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1em 0;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-update-count-header-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+  color: #8F92A1;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-update-count-header-display .brand-addition {
+  background: #F6FAFF;
+  border: 1px solid #B3B6DA;
+  box-sizing: border-box;
+  border-radius: 100vh;
+  padding: 0.6em 1em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.8em 0;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container {
+  display: flex;
+  align-items: center;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .twitter-icon-container {
+  width: 48px;
+  height: 48px;
+  background: #299EE8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .pinterest-icon-container {
+  background: #D32F2F;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .linkedin-icon-container {
+  background: #1976D2;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .social-detail-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .social-detail-text .social-detail-header {
+  font-size: 1rem;
+  color: #272835;
+  font-weight: 600;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .social-detail-text .social-detail-header {
+  font-size: 1rem;
+  color: #272835;
+  font-weight: 600;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .social-detail-text .social-detail-padding {
+  padding: 0.1em 0;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .social-detail-container .social-detail-text .social-detail-sub-header {
+  font-size: 0.7rem;
+  color: #8F92A1;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .twitter-count {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #016F42;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .pinterest-count {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #FF0000;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-update-count-container .social-media-count-display .linkedin-count {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #6B46FF;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: round;
+  transform: translate(50px, 35px);
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container svg circle:nth-child(2) {
+  stroke-dasharray: 480;
+  stroke-dashoffset: calc(480 - (480 * 89) / 100);
+  stroke: #FF8831;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container .progress-number {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 44px rgba(34, 37, 169, 0.1);
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container .progress-number .progress-percent {
+  color: #3D41D7;
+  font-size: 3rem;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-progress-update-container .progress-number .progress-text {
+  color: #8F92A1;
+  font-size: 0.9rem;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-saved-post-container {
+  background: url("../images/saved.svg"), linear-gradient(131.58deg, #FA93D2 1.34%, #895FE0 103.94%);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  padding: 3.5em 1em 1em 1em;
+  justify-content: center;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-saved-post-container .social-saved-greeting-container {
+  font-size: 1rem;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-saved-post-container .social-saved-amount-container {
+  font-size: 3.4rem;
+  padding: 0.2em 0;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-saved-post-container .social-saved-greeting-container {
+  font-size: 1rem;
+}
+
+body .container main .main-display .social-media-update-container .social-media-update-display .social-media-saved-post-container .social-saved-post-reach-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */
